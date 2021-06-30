@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main-wrap{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.sky-wrap{
+
+    height:300px ;
+    background-color:skyblue ;
+}
+.road-wrap{
+    width: 100%;
+    flex:1;
+    background-color:#34495e ;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.line{
+    width: 100%;
+    border: 8px dashed white;
+}
+.cloud-1, .cloud-2,.cloud-3,.cloud-4,.cloud-5{
+    width: 250px;
+    position: absolute;
+}
+.cloud-1{
+    animation-name: cloud1Animation;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+@keyframes  cloud1Animation{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-1500px);
+    }
+
+}
+.cloud-2{
+    margin-top: 90px;
+}
+.cloud-2{
+    animation-name: cloud2Animation;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+@keyframes cloud2Animation {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-1500px);
+    }
+}
+.cloud-3{
+    margin-left: 250px;
+}
+.cloud-3{
+    animation-name: cloud3Animation;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
+}
+@keyframes cloud3Animation {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-1600px);
+    }
+}
+.cloud-4{
+    margin-left: 500px;
+}
+.cloud-4{
+    animation-name: cloud4Animation;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+@keyframes cloud4Animation {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-1700px);
+    }
+}
+.cloud-5{
+   margin-left: 450px;
+    margin-top: 100px ;
+}
+.cloud-5{
+    animation-name: cloud5Animation;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 35s;
+}
+@keyframes cloud5Animation {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-1700px);
+    }
+}
+.sun{
+    width: 100px;
+    margin-top: 35px;
+    margin-left: 450px;
+}
+.car-1,.car-2,.car-3{
+    width: 150px;
+    position: absolute;
+    top: -10px;
+   left: -180px;
+
+}
+.car-2{
+    top: 60px;
+}
+.car-2{
+    animation-name: car2Animation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+@keyframes car2Animation {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(1800px);
+    }
+}
+.car-1{
+    animation-name: car1Animation;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes car1Animation {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(1800px);
+    }
+}
+.car-3{
+    top: 120px;
+}
+.car-3{
+    animation-name: car3Animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+@keyframes car3Animation {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(1800px);
+    }
+}
